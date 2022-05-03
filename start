@@ -1,0 +1,4 @@
+#!/bin/bash
+npm install
+python3 main.py
+npm start
