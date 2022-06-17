@@ -1,4 +1,6 @@
 #!/bin/bash
 npm install
+pip3 install selenium
+pip3 install webdriver_manager
 python3 main.py
 npm start

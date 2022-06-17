@@ -2,8 +2,10 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import json
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 browser.get('https://www.gov.il/apps/police/stations_publish/')
 time.sleep(1)
 lines = browser.find_element(By.XPATH, "/html/body/div[3]/app-root/article/app-stations/div[2]/div[2]/ul")
