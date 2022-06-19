@@ -74,5 +74,5 @@ for station in data:
         }
     }
     geocode["features"].append(instance)
-with open('./src/assets/data/test.geojson', 'w', encoding="utf8") as f:
+with open('./src/assets/data/data.geojson', 'w', encoding="utf8") as f:
     json.dump(geocode, f, ensure_ascii=False, indent=4)
